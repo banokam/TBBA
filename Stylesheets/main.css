@@ -178,6 +178,8 @@ Text Domain: BryantsMathNotes
 
     #homeBackground {
             display: initial;
+            position: absolute;
+            top: -10px;
         }
     
 
@@ -190,16 +192,6 @@ Text Domain: BryantsMathNotes
   background-blend-mode: overlay; 
   background-size: 100%;
 }
-/*#topbackground {
-  background-image: url("../Images/0_Math symbols_2_gauss.png");
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-origin: inherit;
-  background-attachment: absolute;
-  background-position: center;
-  background-blend-mode: overlay; 
-}*/
-
 
     #homeBackground7{
             display: initial;
@@ -213,7 +205,6 @@ Text Domain: BryantsMathNotes
     #payment_Options{
         border-width: 90px 900px 3px 0px;
         width: 32%;
-
     }
     /* ---------------------------------------------------- */
     /* ---------------   TOP NAVIGATION LAYOUT   ---------- */
@@ -297,6 +288,7 @@ Text Domain: BryantsMathNotes
             color:#0b5ef7;
             font-size: 2.2em;
             border-radius: 15px;
+            list-style-type:none;
         }
     #header2{ 
             color:#0944b3; 
@@ -332,27 +324,45 @@ Text Domain: BryantsMathNotes
         }
 
             #header0 {
-            color:#000000;
-            font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
-            font-size: 1.2em;
+            color:#eeeeee;
+            font-family:'Futura', 'Heiti TC', 'Arial Rounded MT', 'Malayalam MN', 'Gill Sans MT', 'Harmonia Sans';
+            font-size: 1.07em;
 
-            background-color: #ffffffa1;
+            background-color: #707070;
+            opacity: .9;
             box-shadow: 0px 10px 25px #353535 ;
 
-
-            width:75%;
-            padding: 10px;
+            width: 90%;
+            margin: auto;
+            padding: 10px 20px 10px 20px;
 
             border-style: solid;
-            border-radius: 5px;
-            border-color: #ffffff;
+            border-color: #373737;
             border-radius: 15px;
 
             font-weight: bold;
             text-align: center;
-            margin-left: 60px;
-            margin-right: auto;
             }
+            .black{
+                color:#1a237e;
+                text-decoration: underline;
+            }
+            #contact1, #contact2{
+                font-family:'Andale Mono', 'Arial Narrow Bold', 'Tahoma regular','Lucida Console','Calibri', sans-serif;
+            }
+            li {
+                list-style-type: none;
+                display: inline;
+                padding: 0px 20px 0px 0px;
+            }
+            table {
+
+                display: inline;
+            }
+            .subject-tables {
+                
+            }
+
 
     /* FIX NAMES (BELOW) */
     /* --------------------------------- */
@@ -453,8 +463,8 @@ Text Domain: BryantsMathNotes
     }
     #background2{
         position: absolute;
-        top:21%;
-        z-index: -3; 
+        top:350px;
+        z-index: -8; 
         width:100%;
 
         border-style: solid;
@@ -557,10 +567,10 @@ Text Domain: BryantsMathNotes
     /*         (IN ORDER OF THE SCREEN DOWNSIZING)          */ 
 
     /* BODY */
-    @media only screen and (max-width: 1205px) { /*SUBTRACTED 5PX */
+    @media only screen and (max-width: 1266px) { /*SUBTRACTED 5PX */
 
         #navBar {
-            font-size: 1.2em;
+            font-size: 0.95em;
         }
        /*
         #header1{  
@@ -578,7 +588,7 @@ Text Domain: BryantsMathNotes
     @media only screen and (max-width: 1175px) { /*SUBTRACTED 5PX */
 
         #navBar {
-            font-size: 1.2em;
+            font-size: 0.9em;
         }
        /*
         #header1{  
@@ -596,7 +606,7 @@ Text Domain: BryantsMathNotes
     @media only screen and (max-width: 1115px) { /*SUBTRACTED 5PX */
 
         #navBar {
-            font-size: 1.0em;
+            font-size: 0.80em;
         }
        
         #header1{  
@@ -613,9 +623,11 @@ Text Domain: BryantsMathNotes
     @media only screen and (max-width: 1050px) { /*SUBTRACTED 5PX */
 
         #navBar {
-            font-size: 1.0em;
+            font-size: 0.75em;
         }
-       
+       #header0{
+        font-size: 1.0em;
+       }
         #header1{  
             font-size: 2.3em;
         }
@@ -627,9 +639,23 @@ Text Domain: BryantsMathNotes
         }
         
     }
+    @media only screen and (max-width: 1011px) { /*SUBTRACTED 5PX */
+
+        #navBar {
+            font-size: 0.70em;
+        }
+        
+    }
 
     @media only screen and (max-width: 992px) { 
 
+        table {
+
+            display: block;
+        }
+        #header0{
+            width: 70%;
+       }
         #header1{  
             font-size: 1.8em;
         }
@@ -639,9 +665,115 @@ Text Domain: BryantsMathNotes
         #headerContent{ 
             font-size: 1.1em;
         }
+        #payment_Options{
+            width: 42%;
+        }
+        iframe {
+
+            width: 90%;
+        }
     }
 
 
+
+/* TEXT SIZED DONWN : */
+        @media only screen and (max-width: 772px) { 
+
+
+        #header0{
+        width: 90%;
+       }
+
+               #payment_Options{
+            width: 62%;
+        }
+
+
+@media only screen and (max-width: 667px) { 
+
+    #background2{
+        top:600px;
+    }   
+
+}
+
+@media only screen and (max-width: 480px) { 
+
+    #background2{
+        top:500px;
+    }   
+
+}
+
+@media only screen and (max-width: 408px) { 
+
+    #background2{
+        top:400px;
+    }   
+
+}
+
+@media only screen and (max-width: 308px) { 
+
+    #background2{
+        top:200px;
+    }   
+
+}
+/**/
+
+    }
+
+        @media only screen and (max-width: 490px) { 
+
+
+            #payment_Options{
+                width: 72%;
+            }
+
+    }
+
+
+        @media only screen and (max-width: 448px) { 
+
+
+       #contact2{
+        font-size: 0.87em;
+       }
+
+    }
+
+        @media only screen and (max-width: 419px) { 
+
+
+            #payment_Options{
+                width: 90%;
+            }
+
+    }
+
+
+       @media only screen and (max-width: 388px) { 
+
+
+       #contact2{
+        font-size: 0.77em;
+       }
+
+            #payment_Options{
+                width: 100%;
+            }
+
+    }
+
+           @media only screen and (max-width: 349px) { 
+
+
+       #contact2{
+        font-size: 0.67em;
+       }
+
+    }
 /*----------------------------------------------------------------*/
     @media only screen and (max-width: 862px) { 
        
@@ -677,7 +809,14 @@ Text Domain: BryantsMathNotes
     @media only screen and (max-width: 969px) {
 
         #navBar {
-            font-size: 0.8em;
+            font-size: 0.65em;
+        }
+    }
+
+        @media only screen and (max-width: 890px) {
+
+        #navBar {
+            font-size: 0.50em;
         }
     }
 
@@ -694,6 +833,7 @@ Text Domain: BryantsMathNotes
             display: initial;
             width: 100%;
             position: absolute;
+            top: -10px;
             z-index: -3;
         }
     }
@@ -706,6 +846,7 @@ Text Domain: BryantsMathNotes
             display: initial;
             width: 100%;
             position: absolute;
+            top: -10px;
             z-index: -3;
         }
     }
